@@ -1,27 +1,27 @@
-import React, { useState } from 'react';
-import { StyleSheet, View, FlatList } from 'react-native';
-import { AddTodo } from './src/AddTodo';
-import { Navbar } from './src/Navbar';
-import { Todo } from './src/Todo';
+import React, {useState} from 'react';
+import {StyleSheet, View, FlatList} from 'react-native';
+import {AddTodo} from './src/AddTodo';
+import {Navbar} from './src/Navbar';
+import {Todo} from './src/Todo';
 
 export default function App() {
   const [todos, setTodos] = useState([]);
 
-  const addTodo = (title) => {
+  const addTodo = title => {
     const newTodo = {
       id: Date.now().toString(),
       title: title,
     };
-    setTodos((predTodos) => {
+    setTodos(predTodos => {
       return [...predTodos, newTodo];
     });
   };
 
-  const removeTodo = (id) => {
-    setTodos((pred) =>
-      pred.filter((todo) => {
+  const removeTodo = id => {
+    setTodos(pred =>
+      pred.filter(todo => {
         return todo.id !== id;
-      })
+      }),
     );
   };
 
@@ -31,9 +31,9 @@ export default function App() {
       <View style={styles.container}>
         <AddTodo onSubmit={addTodo} />
         <FlatList
-          keyExtractor={(item) => item.id.toString()}
+          keyExtractor={item => item.id.toString()}
           data={todos}
-          renderItem={({ item }) => {
+          renderItem={({item}) => {
             return <Todo todo={item} onRemove={removeTodo} />;
           }}
         />
