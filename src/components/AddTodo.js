@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {View, StyleSheet, TextInput, Button, Alert} from 'react-native';
 
-export const AddTodo = ({onSubmit}) => {
+export const AddTodo = ({onSubmit, testID}) => {
   const [value, setValue] = useState('');
 
   const pressHandler = () => {
@@ -21,8 +21,9 @@ export const AddTodo = ({onSubmit}) => {
         placeholder="Введите ToDo"
         style={styles.textInput}
         autoCorrect={false}
+        testID="input-todo"
       />
-      <Button title="Добавить" onPress={pressHandler} testID="btn" />
+      <Button title="Добавить" onPress={pressHandler} testID={testID} />
     </View>
   );
 };

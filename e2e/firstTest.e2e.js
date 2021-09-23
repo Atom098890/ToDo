@@ -1,13 +1,15 @@
-describe('Example', () => {
-  beforeAll(async () => {
+import {AddedTodo, DeletedTodo} from './screens/MainScreenTodo';
+
+describe('Main screen', () => {
+  beforeEach(async () => {
     await device.launchApp();
   });
 
-  beforeEach(async () => {
-    await device.reloadReactNative();
+  it('Add Todo', async () => {
+    await AddedTodo();
   });
 
-  it('should have welcome screen', async () => {
-    await expect(element(by.id('btn'))).toBeVisible();
+  it('Delete todo', async () => {
+    await DeletedTodo();
   });
 });
