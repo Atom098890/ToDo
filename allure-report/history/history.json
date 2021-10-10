@@ -1,0 +1,42 @@
+{
+  "92be7d44d6721d3986cc323a4ad067e0" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "4aee4df572ffb21e",
+      "status" : "failed",
+      "statusDetails" : "Test Failed: No views in hierarchy found matching: matches 0th view.\n                \n                TIP: To print view hierarchy on failed actions/matches, use log-level verbose or higher.",
+      "time" : {
+        "start" : 1632819395104,
+        "stop" : 1632819395882,
+        "duration" : 778
+      }
+    } ]
+  },
+  "50cab7e603d45818592462ab964f681c" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "c30386a592569477",
+      "status" : "failed",
+      "statusDetails" : "_AllureReporter.default.run_describe_start is not a function",
+      "time" : {
+        "start" : 1632819390649,
+        "stop" : 1632819395100,
+        "duration" : 4451
+      }
+    } ]
+  }
+}

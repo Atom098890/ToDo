@@ -1,0 +1,35 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "Main screen",
+    "children" : [ {
+      "name" : "Add Todo",
+      "uid" : "c30386a592569477",
+      "parentUid" : "a6d12a9651703ead251be0788f15fa76",
+      "status" : "failed",
+      "time" : {
+        "start" : 1632819390649,
+        "stop" : 1632819395100,
+        "duration" : 4451
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Delete todo",
+      "uid" : "4aee4df572ffb21e",
+      "parentUid" : "a6d12a9651703ead251be0788f15fa76",
+      "status" : "failed",
+      "time" : {
+        "start" : 1632819395104,
+        "stop" : 1632819395882,
+        "duration" : 778
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "a6d12a9651703ead251be0788f15fa76"
+  } ]
+}
